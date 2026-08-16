@@ -10,8 +10,8 @@ import (
 	"os"
 	"sort"
 
-	"github.com/alekc/freeagent-sdk/freeagent"
-	"github.com/alekc/freeagent-sdk/internal/shape"
+	"github.com/alekc/freeagent"
+	"github.com/alekc/freeagent/internal/shape"
 )
 
 // runSchema prints the field paths and types of an endpoint's response and

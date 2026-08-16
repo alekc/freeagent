@@ -12,7 +12,7 @@ import (
 	"os"
 	"strings"
 
-	"github.com/alekc/freeagent-sdk/freeagent"
+	"github.com/alekc/freeagent"
 )
 
 func runGet(ctx context.Context, args []string) error {

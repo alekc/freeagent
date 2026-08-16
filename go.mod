@@ -1,4 +1,4 @@
-module github.com/alekc/freeagent-sdk
+module github.com/alekc/freeagent
 
 go 1.26.0
 

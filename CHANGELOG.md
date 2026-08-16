@@ -89,7 +89,10 @@ Nothing yet.
 ### Notes
 
 - Read and write paths are both verified against a live sandbox, and the fixtures in
-  `freeagent/testdata/` are now anonymised captures rather than doc-derived.
+  `testdata/` are now anonymised captures rather than doc-derived.
+- The library is the module's root package, so the import path is
+  `github.com/alekc/freeagent`. A first cut briefly carried the module path
+  `github.com/alekc/freeagent-sdk`; that path is abandoned and should not be used.
 - Estimates reject a create without an explicit `status`, unlike invoices. Category creates
   need `category_group`, a free in-range `nominal_code` and a `tax_reporting_name` from an
   unpublished list. Statement import is asynchronous. These and every other doc-versus-reality
@@ -101,5 +104,5 @@ Nothing yet.
   against a real VAT-registered company using `facli schema`, which reports field paths and
   types and never a value. No production data was captured or committed.
 
-[Unreleased]: https://github.com/alekc/freeagent-sdk/compare/v0.1.0...HEAD
-[0.1.0]: https://github.com/alekc/freeagent-sdk/releases/tag/v0.1.0
+[Unreleased]: https://github.com/alekc/freeagent/compare/v0.1.0...HEAD
+[0.1.0]: https://github.com/alekc/freeagent/releases/tag/v0.1.0

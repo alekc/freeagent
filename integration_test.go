@@ -70,7 +70,7 @@ func liveClient(t *testing.T) *Client {
 	client, err := NewClient(
 		WithBaseURL(env.BaseURL),
 		WithTokenSource(source),
-		WithUserAgent("freeagent-sdk-go integration test"),
+		WithUserAgent("freeagent-go integration test"),
 	)
 	if err != nil {
 		t.Fatalf("NewClient: %v", err)

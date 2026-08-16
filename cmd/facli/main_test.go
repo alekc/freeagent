@@ -7,7 +7,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/alekc/freeagent-sdk/freeagent"
+	"github.com/alekc/freeagent"
 )
 
 // The stdlib flag package stops at the first positional argument, so flags

@@ -27,18 +27,16 @@ cover:
 
 # Live suite against the FreeAgent sandbox. Never runs in PR CI: it needs real
 # credentials and consumes the per-user rate limit. See docs in the README.
-#
+
 # Compiled to a stable path rather than run through `go test`, which builds to
-# a fresh temp path every time. On machines with an outbound firewall that
-# means authorising the binary once instead of on every run.
-# Run from the package directory: a compiled test binary inherits the caller's
-# working directory, and the fixtures are resolved relative to it.
+# a fresh temp path every time, so an outbound firewall authorises it once.
+# Fixtures resolve against the caller's cwd, which is the module root.
 .PHONY: test-integration
 test-integration: $(BIN)/integration.test
-	cd freeagent && $(CURDIR)/$(BIN)/integration.test -test.v -test.count=1 -test.run '$(RUN)'
+	$(BIN)/integration.test -test.v -test.count=1 -test.run '$(RUN)'
 
-$(BIN)/integration.test: $(wildcard freeagent/*.go)
-	$(GO) test -c -tags=integration -o $@ ./freeagent
+$(BIN)/integration.test: $(wildcard *.go)
+	$(GO) test -c -tags=integration -o $@ .
 
 RUN ?= .
 

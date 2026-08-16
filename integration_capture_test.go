@@ -19,7 +19,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/alekc/freeagent-sdk/internal/anonymise"
+	"github.com/alekc/freeagent/internal/anonymise"
 )
 
 // captureTarget is one endpoint to snapshot into testdata.

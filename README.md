@@ -1,4 +1,4 @@
-# freeagent-sdk
+# freeagent
 
 A Go client for the [FreeAgent v2 API](https://dev.freeagent.com), covering every resource
 family, plus `facli`, a small operator CLI.
@@ -18,15 +18,14 @@ wrong, and two that would break any UK user on their first call. See
 ## Install
 
 ```bash
-go get github.com/alekc/freeagent-sdk
+go get github.com/alekc/freeagent
 ```
 
 ```go
-import "github.com/alekc/freeagent-sdk/freeagent"
+import "github.com/alekc/freeagent"
 ```
 
-The package sits one directory down from the module, so the import path carries `freeagent`
-twice. Requires Go 1.26.
+Requires Go 1.26.
 
 ## Getting started
 
@@ -285,8 +284,8 @@ make test-integration   # live, needs a token
 ```
 
 The unit suite runs against `httptest` and never touches the network. Fixtures in
-`freeagent/testdata/` are anonymised captures of real responses; see that directory's README
-for what is scrubbed and why the safety net is independent of the field list.
+`testdata/` are anonymised captures of real responses; see that directory's README for what
+is scrubbed and why the safety net is independent of the field list.
 
 The live suite is build-tagged `integration` and never runs in PR CI. Its read half refuses
 production unless `FREEAGENT_ALLOW_PRODUCTION=1`; its write half refuses anything but

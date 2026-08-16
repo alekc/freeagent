@@ -1,4 +1,4 @@
-# Working on freeagent-sdk
+# Working on freeagent
 
 Context for anyone, human or agent, picking this repository up. Read this before changing
 the library; it records decisions whose reasons are not visible in the diff.
@@ -56,7 +56,7 @@ walks the source and fails if it comes back.
 `ID()` and `Kind()`. Following one is restricted to the configured host, because the URLs come
 out of API responses.
 
-**Never commit anything from a real company.** Fixtures in `freeagent/testdata/` are
+**Never commit anything from a real company.** Fixtures in `testdata/` are
 anonymised captures, produced by the integration suite through `internal/anonymise`, which
 re-checks its own output against a denylist read from the live account and refuses to write
 if a value survived. To inspect a real company, use `facli schema`, which reports field paths
@@ -64,14 +64,16 @@ and type classifications and never a value.
 
 ## Layout
 
+The library is the root package, so `github.com/alekc/freeagent` imports it directly.
+
 ```
-freeagent/            the library, one file per resource family
+*.go                  the library, one file per resource family
   client.go           transport, options, retry, the read-only check
   collection.go       ReadCollection[T] and Collection[T] generics
   registry.go         ResourceMeta for every family, shared with facli
   services.go         the typed services hanging off Client
   period_reports.go   the date-addressed filing families
-  testdata/           anonymised fixtures, see its own README
+testdata/             anonymised fixtures, see its own README
 internal/anonymise/   scrubber for captured payloads
 internal/shape/       value-free payload summariser behind facli schema
 cmd/facli/            the CLI

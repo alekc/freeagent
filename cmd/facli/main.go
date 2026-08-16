@@ -17,7 +17,7 @@ import (
 	"syscall"
 	"time"
 
-	"github.com/alekc/freeagent-sdk/freeagent"
+	"github.com/alekc/freeagent"
 )
 
 const usageText = `facli: FreeAgent API command line
@@ -186,7 +186,7 @@ func (c *common) buildClient(ctx context.Context, extra ...freeagent.Option) (*f
 	opts := []freeagent.Option{
 		freeagent.WithBaseURL(env.BaseURL),
 		freeagent.WithTokenSource(source),
-		freeagent.WithUserAgent("facli/" + freeagent.Version + " (+https://github.com/alekc/freeagent-sdk)"),
+		freeagent.WithUserAgent("facli/" + freeagent.Version + " (+https://github.com/alekc/freeagent)"),
 		freeagent.WithRateLimitTest(c.rateLimitTest),
 	}
 	if c.apiVersion != "" {

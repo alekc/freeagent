@@ -15,7 +15,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/alekc/freeagent-sdk/freeagent"
+	"github.com/alekc/freeagent"
 )
 
 // defaultRedirectURI is a loopback callback. It has to be registered on the

@@ -9,7 +9,7 @@ import (
 	"os"
 	"time"
 
-	"github.com/alekc/freeagent-sdk/freeagent"
+	"github.com/alekc/freeagent"
 )
 
 // Build a client backed by a file-stored token that refreshes itself. This is

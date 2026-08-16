@@ -5,7 +5,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/alekc/freeagent-sdk/freeagent"
+	"github.com/alekc/freeagent"
 )
 
 // The three irregular families are rejected locally rather than letting the

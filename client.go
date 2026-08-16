@@ -45,7 +45,7 @@ const DefaultMaxResponseBytes = 32 << 20
 // DefaultUserAgent identifies the library. FreeAgent asks integrations to
 // send something identifying, and callers should append their own name via
 // WithUserAgent.
-var DefaultUserAgent = "freeagent-sdk-go/" + Version + " (+https://github.com/alekc/freeagent-sdk)"
+var DefaultUserAgent = "freeagent-go/" + Version + " (+https://github.com/alekc/freeagent)"
 
 // ErrNoTokenSource is returned by NewClient when neither WithTokenSource nor
 // WithoutAuth was supplied. Every FreeAgent endpoint requires a bearer token,

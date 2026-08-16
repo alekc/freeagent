@@ -44,4 +44,4 @@ formatters:
   settings:
     goimports:
       local-prefixes:
-        - github.com/alekc/freeagent-sdk
+        - github.com/alekc/freeagent
