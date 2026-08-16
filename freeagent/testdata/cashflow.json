@@ -1,0 +1,57 @@
+{
+  "cashflow": {
+    "balance": 0,
+    "from": "2026-05-01",
+    "incoming": {
+      "months": [
+        {
+          "month": 5,
+          "total": 0,
+          "year": 2026
+        },
+        {
+          "month": 6,
+          "total": 0,
+          "year": 2026
+        },
+        {
+          "month": 7,
+          "total": 0,
+          "year": 2026
+        },
+        {
+          "month": 8,
+          "total": 0,
+          "year": 2026
+        }
+      ],
+      "total": 0
+    },
+    "outgoing": {
+      "months": [
+        {
+          "month": 5,
+          "total": 0,
+          "year": 2026
+        },
+        {
+          "month": 6,
+          "total": 0,
+          "year": 2026
+        },
+        {
+          "month": 7,
+          "total": 0,
+          "year": 2026
+        },
+        {
+          "month": 8,
+          "total": 0,
+          "year": 2026
+        }
+      ],
+      "total": 0
+    },
+    "to": "2026-08-16"
+  }
+}

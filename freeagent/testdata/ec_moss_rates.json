@@ -1,0 +1,25 @@
+{
+  "ec_tax_name": "VAT",
+  "sales_tax_rates": [
+    {
+      "band": "Standard",
+      "percentage": "23.0"
+    },
+    {
+      "band": "Reduced",
+      "percentage": "9.0"
+    },
+    {
+      "band": "Reduced",
+      "percentage": "13.5"
+    },
+    {
+      "band": "Parking",
+      "percentage": "13.5"
+    },
+    {
+      "band": "Super Reduced",
+      "percentage": "4.8"
+    }
+  ]
+}

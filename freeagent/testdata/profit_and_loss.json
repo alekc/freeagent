@@ -1,0 +1,26 @@
+{
+  "profit_and_loss_summary": {
+    "expenses": "0",
+    "from": "2026-05-01",
+    "income": "0",
+    "less": [
+      {
+        "title": "Corp. Tax (est.)",
+        "total": "0"
+      },
+      {
+        "title": "Dividends",
+        "total": "0"
+      },
+      {
+        "title": "Adjustments",
+        "total": "0"
+      }
+    ],
+    "operating_profit": "0",
+    "retained_profit": "0",
+    "retained_profit_brought_forward": "0",
+    "retained_profit_carried_forward": "0",
+    "to": "2026-08-16"
+  }
+}

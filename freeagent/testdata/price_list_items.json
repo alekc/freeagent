@@ -1,0 +1,18 @@
+{
+  "price_list_items": [
+    {
+      "category": "https://api.freeagent.com/v2/categories/001",
+      "code": "SDKTEST-2026-A1",
+      "created_at": "2026-08-16T12:42:35.000Z",
+      "description": "SDKTEST Widget",
+      "item_type": "Products",
+      "price": "19.99",
+      "quantity": "1.0",
+      "sales_tax_rate": "0.0",
+      "second_sales_tax_rate": "0.0",
+      "updated_at": "2026-08-16T12:42:35.000Z",
+      "url": "https://api.freeagent.com/v2/price_list_items/6007",
+      "vat_status": "standard"
+    }
+  ]
+}

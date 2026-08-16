@@ -1,0 +1,51 @@
+{
+  "company": {
+    "address1": "1 Example Street",
+    "address2": "Example District",
+    "address3": "",
+    "annual_accounting_periods": [
+      {
+        "ends_on": "2027-04-30",
+        "starts_on": "2026-05-01"
+      }
+    ],
+    "business_category": "IT Contractor / Consulting",
+    "cis_contractor": false,
+    "cis_enabled": false,
+    "cis_subcontractor": false,
+    "company_registration_number": "00000000",
+    "company_start_date": "2024-04-12",
+    "country": "United Kingdom",
+    "created_at": "2026-08-16T11:19:11.000Z",
+    "currency": "GBP",
+    "ec_vat_reporting_enabled": false,
+    "first_accounting_year_end": "2025-04-30",
+    "freeagent_start_date": "2026-05-01",
+    "id": 33870,
+    "initial_vat_basis": "Invoice",
+    "initially_on_frs": false,
+    "locale": "en",
+    "locked_attributes": [
+      "currency"
+    ],
+    "mileage_units": "miles",
+    "name": "Example Name",
+    "postcode": "EX1 1EX",
+    "sales_tax_effective_date": "2024-04-12",
+    "sales_tax_is_value_added": true,
+    "sales_tax_name": "VAT",
+    "sales_tax_rates": [
+      "20.0",
+      "5.0",
+      "0.0"
+    ],
+    "sales_tax_registration_status": "Not Registered",
+    "short_date_format": "dd mmm yy",
+    "subdomain": "example",
+    "supports_auto_sales_tax_on_purchases": true,
+    "town": "Exampleton",
+    "type": "UkLimitedCompany",
+    "updated_at": "2026-08-16T11:20:09.000Z",
+    "url": "https://api.freeagent.com/v2/company"
+  }
+}

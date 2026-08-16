@@ -1,0 +1,62 @@
+{
+  "bank_transactions": [
+    {
+      "amount": "1000.0",
+      "bank_account": "https://api.freeagent.com/v2/bank_accounts/47922",
+      "bank_transaction_explanations": [],
+      "created_at": "2026-08-16T12:42:13.000Z",
+      "dated_on": "2026-08-15",
+      "description": "SDKTEST customer receipt//OTHER/",
+      "full_description": "SDKTEST customer receipt//OTHER/£1,000.00",
+      "is_manual": false,
+      "matching_transactions_count": 0,
+      "transaction_id": "SDKTEST-2",
+      "unexplained_amount": "1000.0",
+      "updated_at": "2026-08-16T12:42:13.000Z",
+      "uploaded_at": "2026-08-16T12:42:13.000Z",
+      "url": "https://api.freeagent.com/v2/bank_transactions/3120042"
+    },
+    {
+      "amount": "-42.5",
+      "bank_account": "https://api.freeagent.com/v2/bank_accounts/47922",
+      "bank_transaction_explanations": [
+        {
+          "bank_account": "https://api.freeagent.com/v2/bank_accounts/47922",
+          "bank_transaction": "https://api.freeagent.com/v2/bank_transactions/3120041",
+          "category": "https://api.freeagent.com/v2/categories/285",
+          "dated_on": "2026-08-14",
+          "description": "SDKTEST explained",
+          "detail": "Accommodation and Meals. Inc £7.08 VAT ",
+          "foreign_currency_value": "0.0",
+          "gross_value": "-42.5",
+          "has_pending_operation": false,
+          "is_deletable": true,
+          "is_locked": false,
+          "is_money_in": false,
+          "is_money_out": true,
+          "is_money_paid_to_user": false,
+          "marked_for_review": false,
+          "sales_tax_rate": "20.0",
+          "sales_tax_status": "TAXABLE",
+          "sales_tax_value": "-7.08",
+          "transaction_description": "SDKTEST card payment//OTHER/£42.50",
+          "transfer_value": "42.5",
+          "type": "Payment",
+          "updated_at": "2026-08-16T12:42:15.000Z",
+          "url": "https://api.freeagent.com/v2/bank_transaction_explanations/2089091"
+        }
+      ],
+      "created_at": "2026-08-16T12:42:13.000Z",
+      "dated_on": "2026-08-14",
+      "description": "SDKTEST card payment//OTHER/",
+      "full_description": "SDKTEST card payment//OTHER/£42.50",
+      "is_manual": false,
+      "matching_transactions_count": 0,
+      "transaction_id": "SDKTEST-1",
+      "unexplained_amount": "0.0",
+      "updated_at": "2026-08-16T12:42:15.000Z",
+      "uploaded_at": "2026-08-16T12:42:13.000Z",
+      "url": "https://api.freeagent.com/v2/bank_transactions/3120041"
+    }
+  ]
+}

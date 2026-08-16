@@ -1,0 +1,30 @@
+{
+  "transactions": [
+    {
+      "category": "https://api.freeagent.com/v2/categories/820",
+      "category_name": "Corporation Tax",
+      "created_at": "2026-08-16T12:29:46.000Z",
+      "dated_on": "2027-04-30",
+      "debit_value": "0.0",
+      "description": "Corporation Tax Provision for the Period Ending 30 April 2027",
+      "foreign_currency_data": {},
+      "nominal_code": "820",
+      "source_item_url": "https://api.freeagent.com/v2/corporation_tax_returns/2027-04-30",
+      "updated_at": "2026-08-16T12:29:46.000Z",
+      "url": "https://api.freeagent.com/v2/accounting/transactions/18731815"
+    },
+    {
+      "category": "https://api.freeagent.com/v2/categories/502",
+      "category_name": "Corporation Tax Expense",
+      "created_at": "2026-08-16T12:29:46.000Z",
+      "dated_on": "2027-04-30",
+      "debit_value": "0.0",
+      "description": "Corporation Tax Provision for the Period Ending 30 April 2027",
+      "foreign_currency_data": {},
+      "nominal_code": "502",
+      "source_item_url": "https://api.freeagent.com/v2/corporation_tax_returns/2027-04-30",
+      "updated_at": "2026-08-16T12:29:46.000Z",
+      "url": "https://api.freeagent.com/v2/accounting/transactions/18731816"
+    }
+  ]
+}

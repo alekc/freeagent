@@ -1,0 +1,30 @@
+{
+  "expenses": [
+    {
+      "attachment": {
+        "content_src": "https://example.invalid/attachment",
+        "content_src_medium": "https://example.invalid/attachment-medium",
+        "content_src_small": "https://example.invalid/attachment-small",
+        "content_type": "application/pdf",
+        "expires_at": "2026-08-16T12:44:16.000Z",
+        "file_name": "receipt.pdf",
+        "file_size": 50,
+        "url": "https://api.freeagent.com/v2/attachments/177472"
+      },
+      "category": "https://api.freeagent.com/v2/categories/285",
+      "created_at": "2026-08-16T12:43:41.000Z",
+      "currency": "GBP",
+      "dated_on": "2026-08-16",
+      "description": "SDKTEST expense",
+      "gross_value": "-12.34",
+      "native_gross_value": "-12.34",
+      "native_sales_tax_value": "-2.06",
+      "sales_tax_rate": "20.0",
+      "sales_tax_status": "TAXABLE",
+      "sales_tax_value": "-2.06",
+      "updated_at": "2026-08-16T12:43:41.000Z",
+      "url": "https://api.freeagent.com/v2/expenses/523688",
+      "user": "https://api.freeagent.com/v2/users/40180"
+    }
+  ]
+}

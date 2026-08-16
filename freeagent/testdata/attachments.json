@@ -1,0 +1,12 @@
+{
+  "attachment": {
+    "content_src": "https://example.invalid/attachment",
+    "content_src_medium": "https://example.invalid/attachment-medium",
+    "content_src_small": "https://example.invalid/attachment-small",
+    "content_type": "application/pdf",
+    "expires_at": "2026-08-16T12:44:18.000Z",
+    "file_name": "receipt.pdf",
+    "file_size": 50,
+    "url": "https://api.freeagent.com/v2/attachments/177472"
+  }
+}

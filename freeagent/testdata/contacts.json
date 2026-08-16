@@ -1,0 +1,23 @@
+{
+  "contacts": [
+    {
+      "account_balance": "-60.0",
+      "active_projects_count": 1,
+      "charge_sales_tax": "Auto",
+      "contact_name_on_invoices": true,
+      "country": "United Kingdom",
+      "created_at": "2026-08-16T12:43:38.000Z",
+      "email": "user@example.com",
+      "emails_invoices_automatically": false,
+      "emails_payment_reminders": false,
+      "emails_thank_you_notes": false,
+      "locale": "en",
+      "organisation_name": "Example Organisation Ltd",
+      "status": "Active",
+      "updated_at": "2026-08-16T12:43:41.000Z",
+      "url": "https://api.freeagent.com/v2/contacts/225200",
+      "uses_contact_invoice_sequence": false,
+      "uses_contact_level_email_settings": false
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "bank_accounts": [
+    {
+      "account_number": "00000000",
+      "bank_code": "generic",
+      "bank_name": "Example Bank",
+      "created_at": "2026-08-16T11:21:00.000Z",
+      "currency": "GBP",
+      "current_balance": "1000.0",
+      "is_personal": false,
+      "is_primary": true,
+      "latest_activity_date": "2026-05-01",
+      "manually_added_transaction_count": 0,
+      "marked_for_review_count": 0,
+      "name": "Example Name",
+      "opening_balance": "1000.0",
+      "sort_code": "00-00-00",
+      "status": "active",
+      "total_count": 0,
+      "type": "StandardBankAccount",
+      "unexplained_transaction_count": 0,
+      "updated_at": "2026-08-16T11:21:00.000Z",
+      "url": "https://api.freeagent.com/v2/bank_accounts/47915"
+    },
+    {
+      "bank_code": "generic",
+      "bank_name": "Example Bank",
+      "created_at": "2026-08-16T12:42:12.000Z",
+      "currency": "GBP",
+      "current_balance": "957.5",
+      "is_personal": false,
+      "is_primary": false,
+      "latest_activity_date": "2026-08-15",
+      "manually_added_transaction_count": 0,
+      "marked_for_review_count": 0,
+      "name": "Example Name",
+      "opening_balance": "0.0",
+      "status": "active",
+      "total_count": 2,
+      "type": "StandardBankAccount",
+      "unexplained_transaction_count": 1,
+      "updated_at": "2026-08-16T12:42:16.000Z",
+      "url": "https://api.freeagent.com/v2/bank_accounts/47922"
+    }
+  ]
+}

@@ -1,0 +1,829 @@
+{
+  "admin_expenses_categories": [
+    {
+      "allowable_for_tax": true,
+      "auto_sales_tax_rate": "Standard rate",
+      "description": "Accommodation and Meals",
+      "group_description": "Admin expenses (normally VATable)",
+      "nominal_code": "285",
+      "tax_reporting_name": "Travel and subsistence expenses",
+      "url": "https://api.freeagent.com/v2/categories/285"
+    },
+    {
+      "allowable_for_tax": true,
+      "auto_sales_tax_rate": "Standard rate",
+      "description": "Accountancy Fees",
+      "group_description": "Admin expenses (normally VATable)",
+      "nominal_code": "292",
+      "tax_reporting_name": "Accountancy fees",
+      "url": "https://api.freeagent.com/v2/categories/292"
+    },
+    {
+      "allowable_for_tax": true,
+      "auto_sales_tax_rate": "Standard rate",
+      "description": "Advertising and Promotion",
+      "group_description": "Admin expenses (normally VATable)",
+      "nominal_code": "288",
+      "tax_reporting_name": "Advertising and promotional costs",
+      "url": "https://api.freeagent.com/v2/categories/288"
+    },
+    {
+      "allowable_for_tax": true,
+      "auto_sales_tax_rate": "Zero rate",
+      "description": "Bank/Finance Charges",
+      "group_description": "Admin expenses (normally Zero-VAT)",
+      "nominal_code": "363",
+      "tax_reporting_name": "Finance charges",
+      "url": "https://api.freeagent.com/v2/categories/363"
+    },
+    {
+      "allowable_for_tax": true,
+      "auto_sales_tax_rate": "Zero rate",
+      "description": "Books and Journals",
+      "group_description": "Admin expenses (normally Zero-VAT)",
+      "nominal_code": "359",
+      "tax_reporting_name": "Stationery",
+      "url": "https://api.freeagent.com/v2/categories/359"
+    },
+    {
+      "allowable_for_tax": false,
+      "auto_sales_tax_rate": "Standard rate",
+      "description": "Business Entertaining",
+      "group_description": "Admin expenses (normally VATable)",
+      "nominal_code": "335",
+      "tax_reporting_name": "Business entertaining",
+      "url": "https://api.freeagent.com/v2/categories/335"
+    },
+    {
+      "allowable_for_tax": true,
+      "auto_sales_tax_rate": "Outside of the scope of VAT",
+      "description": "Charitable Donations",
+      "group_description": "Admin expenses (normally Zero-VAT)",
+      "nominal_code": "360",
+      "tax_reporting_name": "Charitable donations",
+      "url": "https://api.freeagent.com/v2/categories/360"
+    },
+    {
+      "allowable_for_tax": true,
+      "auto_sales_tax_rate": "Standard rate",
+      "description": "Childcare Vouchers",
+      "group_description": "Admin expenses (normally VATable)",
+      "nominal_code": "278",
+      "tax_reporting_name": "Staff welfare",
+      "url": "https://api.freeagent.com/v2/categories/278"
+    },
+    {
+      "allowable_for_tax": true,
+      "auto_sales_tax_rate": "Standard rate",
+      "description": "Computer Hardware",
+      "group_description": "Admin expenses (normally VATable)",
+      "nominal_code": "270",
+      "tax_reporting_name": "IT and computer consumables",
+      "url": "https://api.freeagent.com/v2/categories/270"
+    },
+    {
+      "allowable_for_tax": true,
+      "auto_sales_tax_rate": "Standard rate",
+      "description": "Computer Software",
+      "group_description": "Admin expenses (normally VATable)",
+      "nominal_code": "269",
+      "tax_reporting_name": "Computer software costs",
+      "url": "https://api.freeagent.com/v2/categories/269"
+    },
+    {
+      "allowable_for_tax": true,
+      "auto_sales_tax_rate": "Standard rate",
+      "description": "Consultancy Fees",
+      "group_description": "Admin expenses (normally VATable)",
+      "nominal_code": "293",
+      "tax_reporting_name": "General consultancy fees",
+      "url": "https://api.freeagent.com/v2/categories/293"
+    },
+    {
+      "allowable_for_tax": false,
+      "auto_sales_tax_rate": "Outside of the scope of VAT",
+      "description": "Corporation Tax Penalty",
+      "group_description": "Admin expenses (normally Zero-VAT)",
+      "nominal_code": "372",
+      "tax_reporting_name": "Late payment of tax",
+      "url": "https://api.freeagent.com/v2/categories/372"
+    },
+    {
+      "allowable_for_tax": false,
+      "auto_sales_tax_rate": "Zero rate",
+      "description": "Formation Costs",
+      "group_description": "Admin expenses (normally Zero-VAT)",
+      "nominal_code": "294",
+      "tax_reporting_name": "Other legal and professional fees",
+      "url": "https://api.freeagent.com/v2/categories/294"
+    },
+    {
+      "allowable_for_tax": true,
+      "auto_sales_tax_rate": "Zero rate",
+      "description": "Insurance",
+      "group_description": "Admin expenses (normally Zero-VAT)",
+      "nominal_code": "364",
+      "tax_reporting_name": "Insurance",
+      "url": "https://api.freeagent.com/v2/categories/364"
+    },
+    {
+      "allowable_for_tax": true,
+      "auto_sales_tax_rate": "Zero rate",
+      "description": "Interest Payable",
+      "group_description": "Admin expenses (normally Zero-VAT)",
+      "nominal_code": "362",
+      "tax_reporting_name": "Interest Payable and similar charges",
+      "url": "https://api.freeagent.com/v2/categories/362"
+    },
+    {
+      "allowable_for_tax": true,
+      "auto_sales_tax_rate": "Standard rate",
+      "description": "Internet & Telephone",
+      "group_description": "Admin expenses (normally VATable)",
+      "nominal_code": "273",
+      "tax_reporting_name": "Telecommunications costs",
+      "url": "https://api.freeagent.com/v2/categories/273"
+    },
+    {
+      "allowable_for_tax": true,
+      "auto_sales_tax_rate": "Standard rate",
+      "description": "Leasing Payments",
+      "group_description": "Admin expenses (normally VATable)",
+      "nominal_code": "291",
+      "tax_reporting_name": "Hire and leasing of other assets",
+      "url": "https://api.freeagent.com/v2/categories/291"
+    },
+    {
+      "allowable_for_tax": true,
+      "auto_sales_tax_rate": "Standard rate",
+      "description": "Legal and Professional Fees",
+      "group_description": "Admin expenses (normally VATable)",
+      "nominal_code": "290",
+      "tax_reporting_name": "Legal fees",
+      "url": "https://api.freeagent.com/v2/categories/290"
+    },
+    {
+      "allowable_for_tax": true,
+      "auto_sales_tax_rate": "Standard rate",
+      "description": "Mileage",
+      "group_description": "Admin expenses (normally VATable)",
+      "nominal_code": "249",
+      "tax_reporting_name": "Vehicle running costs",
+      "url": "https://api.freeagent.com/v2/categories/249"
+    },
+    {
+      "allowable_for_tax": true,
+      "auto_sales_tax_rate": "Standard rate",
+      "description": "Mobile Phone",
+      "group_description": "Admin expenses (normally VATable)",
+      "nominal_code": "274",
+      "tax_reporting_name": "Telecommunications costs",
+      "url": "https://api.freeagent.com/v2/categories/274"
+    },
+    {
+      "allowable_for_tax": true,
+      "auto_sales_tax_rate": "Standard rate",
+      "description": "Motor Expenses",
+      "group_description": "Admin expenses (normally VATable)",
+      "nominal_code": "283",
+      "tax_reporting_name": "Vehicle running costs",
+      "url": "https://api.freeagent.com/v2/categories/283"
+    },
+    {
+      "allowable_for_tax": true,
+      "auto_sales_tax_rate": "Standard rate",
+      "description": "Office Costs",
+      "group_description": "Admin expenses (normally VATable)",
+      "nominal_code": "250",
+      "tax_reporting_name": "General maintenance",
+      "url": "https://api.freeagent.com/v2/categories/250"
+    },
+    {
+      "allowable_for_tax": true,
+      "auto_sales_tax_rate": "Standard rate",
+      "description": "Office Equipment",
+      "group_description": "Admin expenses (normally VATable)",
+      "nominal_code": "271",
+      "tax_reporting_name": "Consumable items",
+      "url": "https://api.freeagent.com/v2/categories/271"
+    },
+    {
+      "allowable_for_tax": true,
+      "auto_sales_tax_rate": "Standard rate",
+      "description": "Other Computer Costs",
+      "group_description": "Admin expenses (normally VATable)",
+      "nominal_code": "272",
+      "tax_reporting_name": "Computer software costs",
+      "url": "https://api.freeagent.com/v2/categories/272"
+    },
+    {
+      "allowable_for_tax": false,
+      "auto_sales_tax_rate": "Outside of the scope of VAT",
+      "description": "PAYE/NI Penalty",
+      "group_description": "Admin expenses (normally Zero-VAT)",
+      "nominal_code": "373",
+      "tax_reporting_name": "Late payment of tax",
+      "url": "https://api.freeagent.com/v2/categories/373"
+    },
+    {
+      "allowable_for_tax": true,
+      "auto_sales_tax_rate": "Outside of the scope of VAT",
+      "description": "Pension (Annuity)",
+      "group_description": "Admin expenses (normally Zero-VAT)",
+      "nominal_code": "351",
+      "tax_reporting_name": "Staff pensions, defined contribution schemes",
+      "url": "https://api.freeagent.com/v2/categories/351"
+    },
+    {
+      "allowable_for_tax": true,
+      "auto_sales_tax_rate": "Outside of the scope of VAT",
+      "description": "Pension (Personal/Stakeholder)",
+      "group_description": "Admin expenses (normally Zero-VAT)",
+      "nominal_code": "350",
+      "tax_reporting_name": "Staff pensions, defined contribution schemes",
+      "url": "https://api.freeagent.com/v2/categories/350"
+    },
+    {
+      "allowable_for_tax": true,
+      "auto_sales_tax_rate": "Zero rate",
+      "description": "Postage",
+      "group_description": "Admin expenses (normally Zero-VAT)",
+      "nominal_code": "358",
+      "tax_reporting_name": "Postage costs",
+      "url": "https://api.freeagent.com/v2/categories/358"
+    },
+    {
+      "allowable_for_tax": true,
+      "auto_sales_tax_rate": "Standard rate",
+      "description": "Printing",
+      "group_description": "Admin expenses (normally VATable)",
+      "nominal_code": "276",
+      "tax_reporting_name": "Printing costs",
+      "url": "https://api.freeagent.com/v2/categories/276"
+    },
+    {
+      "allowable_for_tax": true,
+      "auto_sales_tax_rate": "Zero rate",
+      "description": "Realized Currency Exchange Gain/Loss",
+      "group_description": "Admin expenses (normally Zero-VAT)",
+      "nominal_code": "390",
+      "tax_reporting_name": "Gain (loss) on foreign currency transactions",
+      "url": "https://api.freeagent.com/v2/categories/390"
+    },
+    {
+      "allowable_for_tax": true,
+      "auto_sales_tax_rate": "Standard rate",
+      "description": "Rent",
+      "group_description": "Admin expenses (normally VATable)",
+      "nominal_code": "251",
+      "tax_reporting_name": "Rent of premises",
+      "url": "https://api.freeagent.com/v2/categories/251"
+    },
+    {
+      "allowable_for_tax": true,
+      "auto_sales_tax_rate": "Standard rate",
+      "description": "Staff Entertaining",
+      "group_description": "Admin expenses (normally VATable)",
+      "nominal_code": "289",
+      "tax_reporting_name": "Staff entertaining",
+      "url": "https://api.freeagent.com/v2/categories/289"
+    },
+    {
+      "allowable_for_tax": true,
+      "auto_sales_tax_rate": "Standard rate",
+      "description": "Staff Training",
+      "group_description": "Admin expenses (normally VATable)",
+      "nominal_code": "282",
+      "tax_reporting_name": "Staff training",
+      "url": "https://api.freeagent.com/v2/categories/282"
+    },
+    {
+      "allowable_for_tax": true,
+      "auto_sales_tax_rate": "Standard rate",
+      "description": "Stationery",
+      "group_description": "Admin expenses (normally VATable)",
+      "nominal_code": "277",
+      "tax_reporting_name": "Stationery",
+      "url": "https://api.freeagent.com/v2/categories/277"
+    },
+    {
+      "allowable_for_tax": true,
+      "auto_sales_tax_rate": "Zero rate",
+      "description": "Subscriptions",
+      "group_description": "Admin expenses (normally Zero-VAT)",
+      "nominal_code": "361",
+      "tax_reporting_name": "Subscriptions to professional and trade bodies",
+      "url": "https://api.freeagent.com/v2/categories/361"
+    },
+    {
+      "allowable_for_tax": true,
+      "auto_sales_tax_rate": "Standard rate",
+      "description": "Sundries",
+      "group_description": "Admin expenses (normally VATable)",
+      "nominal_code": "280",
+      "tax_reporting_name": "Sundry expenses",
+      "url": "https://api.freeagent.com/v2/categories/280"
+    },
+    {
+      "allowable_for_tax": true,
+      "auto_sales_tax_rate": "Zero rate",
+      "description": "Travel",
+      "group_description": "Admin expenses (normally Zero-VAT)",
+      "nominal_code": "365",
+      "tax_reporting_name": "Travel and subsistence expenses",
+      "url": "https://api.freeagent.com/v2/categories/365"
+    },
+    {
+      "allowable_for_tax": true,
+      "auto_sales_tax_rate": "Zero rate",
+      "description": "Unrealized Currency Exchange Gain/Loss",
+      "group_description": "Admin expenses (normally Zero-VAT)",
+      "nominal_code": "391",
+      "tax_reporting_name": "Gain (loss) on foreign currency transactions",
+      "url": "https://api.freeagent.com/v2/categories/391"
+    },
+    {
+      "allowable_for_tax": true,
+      "auto_sales_tax_rate": "Zero rate",
+      "description": "Use Of Home",
+      "group_description": "Admin expenses (normally Zero-VAT)",
+      "nominal_code": "366",
+      "tax_reporting_name": "Use of residence for business purposes",
+      "url": "https://api.freeagent.com/v2/categories/366"
+    },
+    {
+      "allowable_for_tax": false,
+      "auto_sales_tax_rate": "Outside of the scope of VAT",
+      "description": "VAT Penalty",
+      "group_description": "Admin expenses (normally Zero-VAT)",
+      "nominal_code": "371",
+      "tax_reporting_name": "Late payment of tax",
+      "url": "https://api.freeagent.com/v2/categories/371"
+    },
+    {
+      "allowable_for_tax": true,
+      "auto_sales_tax_rate": "Standard rate",
+      "description": "Web Hosting",
+      "group_description": "Admin expenses (normally VATable)",
+      "nominal_code": "268",
+      "tax_reporting_name": "Computer software costs",
+      "url": "https://api.freeagent.com/v2/categories/268"
+    }
+  ],
+  "cost_of_sales_categories": [
+    {
+      "allowable_for_tax": true,
+      "auto_sales_tax_rate": "Standard rate",
+      "description": "Commission Paid",
+      "group_description": "Cost of sales (normally VATable)",
+      "nominal_code": "102",
+      "tax_reporting_name": "Commissions Payable",
+      "url": "https://api.freeagent.com/v2/categories/102"
+    },
+    {
+      "allowable_for_tax": true,
+      "auto_sales_tax_rate": "Standard rate",
+      "description": "Cost of Sales",
+      "group_description": "Cost of sales (normally VATable)",
+      "nominal_code": "101",
+      "tax_reporting_name": "Purchases",
+      "url": "https://api.freeagent.com/v2/categories/101"
+    },
+    {
+      "allowable_for_tax": true,
+      "auto_sales_tax_rate": "Standard rate",
+      "description": "Equipment Hire",
+      "group_description": "Cost of sales (normally VATable)",
+      "nominal_code": "104",
+      "tax_reporting_name": "Material Costs",
+      "url": "https://api.freeagent.com/v2/categories/104"
+    },
+    {
+      "allowable_for_tax": true,
+      "auto_sales_tax_rate": "Standard rate",
+      "description": "Materials",
+      "group_description": "Cost of sales (normally VATable)",
+      "nominal_code": "103",
+      "tax_reporting_name": "Purchases",
+      "url": "https://api.freeagent.com/v2/categories/103"
+    },
+    {
+      "allowable_for_tax": true,
+      "auto_sales_tax_rate": "Standard rate",
+      "description": "Subcontractor Costs",
+      "group_description": "Cost of sales (normally VATable)",
+      "nominal_code": "150",
+      "tax_reporting_name": "Subcontractor Costs",
+      "url": "https://api.freeagent.com/v2/categories/150"
+    }
+  ],
+  "general_categories": [
+    {
+      "description": "Interest Received",
+      "nominal_code": "051",
+      "tax_reporting_name": "Interest Received",
+      "url": "https://api.freeagent.com/v2/categories/051"
+    },
+    {
+      "description": "Flat Rate Scheme Surplus",
+      "nominal_code": "055",
+      "tax_reporting_name": "Turnover",
+      "url": "https://api.freeagent.com/v2/categories/055"
+    },
+    {
+      "description": "Refund of Other Tax Received",
+      "nominal_code": "056",
+      "tax_reporting_name": "Other Income",
+      "url": "https://api.freeagent.com/v2/categories/056"
+    },
+    {
+      "description": "PAYE/NI Online Filing Incentive Claimed",
+      "nominal_code": "057",
+      "tax_reporting_name": "Other Income",
+      "url": "https://api.freeagent.com/v2/categories/057"
+    },
+    {
+      "description": "Grant Income",
+      "nominal_code": "058",
+      "tax_reporting_name": "Other Income",
+      "url": "https://api.freeagent.com/v2/categories/058"
+    },
+    {
+      "description": "Salaries",
+      "nominal_code": "401",
+      "tax_reporting_name": "Wages and salaries",
+      "url": "https://api.freeagent.com/v2/categories/401"
+    },
+    {
+      "description": "Employer NICs",
+      "nominal_code": "402",
+      "tax_reporting_name": "Employer's National Insurance, staff",
+      "url": "https://api.freeagent.com/v2/categories/402"
+    },
+    {
+      "description": "Staff Pensions",
+      "nominal_code": "403",
+      "tax_reporting_name": "Staff pensions, defined contribution schemes",
+      "url": "https://api.freeagent.com/v2/categories/403"
+    },
+    {
+      "description": "Net Salary Expense",
+      "nominal_code": "404",
+      "tax_reporting_name": "Wages and salaries",
+      "url": "https://api.freeagent.com/v2/categories/404"
+    },
+    {
+      "description": "PAYE/NI Expense",
+      "nominal_code": "405",
+      "tax_reporting_name": "Wages and salaries",
+      "url": "https://api.freeagent.com/v2/categories/405"
+    },
+    {
+      "description": "Directors' Salaries",
+      "nominal_code": "407",
+      "tax_reporting_name": "Director's remuneration",
+      "url": "https://api.freeagent.com/v2/categories/407"
+    },
+    {
+      "description": "Directors' Employer NICs",
+      "nominal_code": "408",
+      "tax_reporting_name": "Employer's National Insurance, directors",
+      "url": "https://api.freeagent.com/v2/categories/408"
+    },
+    {
+      "description": "Directors' Staff Pensions",
+      "nominal_code": "409",
+      "tax_reporting_name": "Director pensions, defined contribution schemes",
+      "url": "https://api.freeagent.com/v2/categories/409"
+    },
+    {
+      "description": "Bad Debts Written Off",
+      "nominal_code": "450",
+      "tax_reporting_name": "Bad debts written off",
+      "url": "https://api.freeagent.com/v2/categories/450"
+    },
+    {
+      "description": "Depreciation Charge",
+      "nominal_code": "460",
+      "tax_reporting_name": "Depreciation of tangible fixed assets",
+      "url": "https://api.freeagent.com/v2/categories/460"
+    },
+    {
+      "description": "Loss/Gain on Disposal of Capital Asset",
+      "nominal_code": "461",
+      "tax_reporting_name": "Gain (loss) from disposal of tangible fixed assets",
+      "url": "https://api.freeagent.com/v2/categories/461"
+    },
+    {
+      "description": "Corporation Tax Expense",
+      "nominal_code": "502",
+      "tax_reporting_name": "Corporation tax",
+      "url": "https://api.freeagent.com/v2/categories/502"
+    },
+    {
+      "description": "Deferred Corporation Tax Expense",
+      "nominal_code": "503",
+      "tax_reporting_name": "Corporation tax",
+      "url": "https://api.freeagent.com/v2/categories/503"
+    },
+    {
+      "description": "Error",
+      "nominal_code": "599",
+      "tax_reporting_name": "Error",
+      "url": "https://api.freeagent.com/v2/categories/599"
+    },
+    {
+      "description": "Capital Asset Brought Forward",
+      "nominal_code": "601",
+      "tax_reporting_name": "Fixed assets brought forward",
+      "url": "https://api.freeagent.com/v2/categories/601"
+    },
+    {
+      "description": "Capital Asset Purchase",
+      "nominal_code": "602",
+      "tax_reporting_name": "Fixed asset purchases",
+      "url": "https://api.freeagent.com/v2/categories/602"
+    },
+    {
+      "description": "Disposal of Capital Asset",
+      "nominal_code": "604",
+      "tax_reporting_name": "Fixed asset disposals",
+      "url": "https://api.freeagent.com/v2/categories/604"
+    },
+    {
+      "description": "Capital Asset Depreciation Brought Forward",
+      "nominal_code": "605",
+      "tax_reporting_name": "Fixed asset depreciation brought forward",
+      "url": "https://api.freeagent.com/v2/categories/605"
+    },
+    {
+      "description": "Capital Asset Depreciation in Year",
+      "nominal_code": "606",
+      "tax_reporting_name": "Fixed asset depreciation in year",
+      "url": "https://api.freeagent.com/v2/categories/606"
+    },
+    {
+      "description": "Depreciation on Disposal of Capital Asset",
+      "nominal_code": "607",
+      "tax_reporting_name": "Fixed asset depreciation on disposals",
+      "url": "https://api.freeagent.com/v2/categories/607"
+    },
+    {
+      "description": "Stock Adjustment",
+      "nominal_code": "610",
+      "tax_reporting_name": "Stock",
+      "url": "https://api.freeagent.com/v2/categories/610"
+    },
+    {
+      "description": "Prepayments",
+      "nominal_code": "620",
+      "tax_reporting_name": "Prepayments and accrued income",
+      "url": "https://api.freeagent.com/v2/categories/620"
+    },
+    {
+      "description": "Investments Brought Forward",
+      "nominal_code": "630",
+      "tax_reporting_name": "Fixed asset investments",
+      "url": "https://api.freeagent.com/v2/categories/630"
+    },
+    {
+      "description": "Investments Additions",
+      "nominal_code": "631",
+      "tax_reporting_name": "Fixed asset investments",
+      "url": "https://api.freeagent.com/v2/categories/631"
+    },
+    {
+      "description": "Investments Revaluations",
+      "nominal_code": "632",
+      "tax_reporting_name": "Fixed asset investments",
+      "url": "https://api.freeagent.com/v2/categories/632"
+    },
+    {
+      "description": "Investments Disposals",
+      "nominal_code": "633",
+      "tax_reporting_name": "Fixed asset investments",
+      "url": "https://api.freeagent.com/v2/categories/633"
+    },
+    {
+      "description": "Provisions for Liabilities",
+      "nominal_code": "650",
+      "tax_reporting_name": "Provisions for liabilities",
+      "url": "https://api.freeagent.com/v2/categories/650"
+    },
+    {
+      "description": "Accruals",
+      "nominal_code": "660",
+      "tax_reporting_name": "Accruals and deferred income",
+      "url": "https://api.freeagent.com/v2/categories/660"
+    },
+    {
+      "description": "Share Premium",
+      "nominal_code": "670",
+      "url": "https://api.freeagent.com/v2/categories/670"
+    },
+    {
+      "description": "Trade Debtors",
+      "nominal_code": "681",
+      "tax_reporting_name": "Debtors",
+      "url": "https://api.freeagent.com/v2/categories/681"
+    },
+    {
+      "description": "Other Debtors",
+      "nominal_code": "682",
+      "tax_reporting_name": "Debtors",
+      "url": "https://api.freeagent.com/v2/categories/682"
+    },
+    {
+      "description": "Bank Account",
+      "nominal_code": "750",
+      "tax_reporting_name": "Bank account",
+      "url": "https://api.freeagent.com/v2/categories/750"
+    },
+    {
+      "description": "Unpresented Items",
+      "nominal_code": "760",
+      "tax_reporting_name": "Money in transit",
+      "url": "https://api.freeagent.com/v2/categories/760"
+    },
+    {
+      "description": "Bank Transfers in Progress",
+      "nominal_code": "761",
+      "tax_reporting_name": "Money in transit",
+      "url": "https://api.freeagent.com/v2/categories/761"
+    },
+    {
+      "description": "Credit Note Reconciliations",
+      "nominal_code": "790",
+      "tax_reporting_name": "Contra",
+      "url": "https://api.freeagent.com/v2/categories/790"
+    },
+    {
+      "description": "Liabilities < 1 Year",
+      "nominal_code": "794",
+      "tax_reporting_name": "Creditors due within one year",
+      "url": "https://api.freeagent.com/v2/categories/794"
+    },
+    {
+      "description": "Liabilities > 1 Year",
+      "nominal_code": "795",
+      "tax_reporting_name": "Creditors due in over one year",
+      "url": "https://api.freeagent.com/v2/categories/795"
+    },
+    {
+      "description": "Trade Creditors",
+      "nominal_code": "796",
+      "tax_reporting_name": "Creditors",
+      "url": "https://api.freeagent.com/v2/categories/796"
+    },
+    {
+      "description": "Other Creditors",
+      "nominal_code": "797",
+      "tax_reporting_name": "Creditors",
+      "url": "https://api.freeagent.com/v2/categories/797"
+    },
+    {
+      "description": "Non-Bill HP Liabilities < 1 Year",
+      "nominal_code": "798",
+      "tax_reporting_name": "Creditors due within one year",
+      "url": "https://api.freeagent.com/v2/categories/798"
+    },
+    {
+      "description": "Non-Bill HP Liabilities > 1 Year",
+      "nominal_code": "799",
+      "tax_reporting_name": "Creditors due in over one year",
+      "url": "https://api.freeagent.com/v2/categories/799"
+    },
+    {
+      "description": "Pension Creditor",
+      "nominal_code": "813",
+      "tax_reporting_name": "Creditors",
+      "url": "https://api.freeagent.com/v2/categories/813"
+    },
+    {
+      "description": "PAYE/NI",
+      "nominal_code": "814",
+      "tax_reporting_name": "Creditors",
+      "url": "https://api.freeagent.com/v2/categories/814"
+    },
+    {
+      "description": "Other Payroll Deductions",
+      "nominal_code": "815",
+      "tax_reporting_name": "Creditors",
+      "url": "https://api.freeagent.com/v2/categories/815"
+    },
+    {
+      "description": "VAT",
+      "nominal_code": "817",
+      "tax_reporting_name": "VAT",
+      "url": "https://api.freeagent.com/v2/categories/817"
+    },
+    {
+      "description": "VAT Reclaimed",
+      "nominal_code": "818",
+      "tax_reporting_name": "VAT",
+      "url": "https://api.freeagent.com/v2/categories/818"
+    },
+    {
+      "description": "VAT Charged",
+      "nominal_code": "819",
+      "tax_reporting_name": "VAT",
+      "url": "https://api.freeagent.com/v2/categories/819"
+    },
+    {
+      "description": "Corporation Tax",
+      "nominal_code": "820",
+      "tax_reporting_name": "Corporation tax",
+      "url": "https://api.freeagent.com/v2/categories/820"
+    },
+    {
+      "description": "Deferred VAT",
+      "nominal_code": "823",
+      "tax_reporting_name": "VAT",
+      "url": "https://api.freeagent.com/v2/categories/823"
+    },
+    {
+      "description": "VAT Mini One Stop Shop",
+      "nominal_code": "824",
+      "tax_reporting_name": "Creditors",
+      "url": "https://api.freeagent.com/v2/categories/824"
+    },
+    {
+      "description": "Deferred Corporation Tax",
+      "nominal_code": "825",
+      "tax_reporting_name": "Corporation tax",
+      "url": "https://api.freeagent.com/v2/categories/825"
+    },
+    {
+      "description": "Smart User Payment",
+      "nominal_code": "900",
+      "tax_reporting_name": "Money due to/from user",
+      "url": "https://api.freeagent.com/v2/categories/900"
+    },
+    {
+      "description": "Capital Account",
+      "nominal_code": "901",
+      "url": "https://api.freeagent.com/v2/categories/901"
+    },
+    {
+      "description": "Salary and Bonuses",
+      "nominal_code": "902",
+      "tax_reporting_name": "Money due to/from user",
+      "url": "https://api.freeagent.com/v2/categories/902"
+    },
+    {
+      "description": "Benefit in Kind",
+      "nominal_code": "904",
+      "tax_reporting_name": "Money due to/from user",
+      "url": "https://api.freeagent.com/v2/categories/904"
+    },
+    {
+      "description": "Expense Account",
+      "nominal_code": "905",
+      "tax_reporting_name": "Money due to/from user",
+      "url": "https://api.freeagent.com/v2/categories/905"
+    },
+    {
+      "description": "Director Loan Account",
+      "nominal_code": "907",
+      "tax_reporting_name": "Money due to/from user",
+      "url": "https://api.freeagent.com/v2/categories/907"
+    },
+    {
+      "description": "Dividend",
+      "nominal_code": "908",
+      "url": "https://api.freeagent.com/v2/categories/908"
+    },
+    {
+      "description": "Unpaid Shares",
+      "nominal_code": "910",
+      "tax_reporting_name": "Called up share capital not paid",
+      "url": "https://api.freeagent.com/v2/categories/910"
+    },
+    {
+      "description": "Profit and Loss",
+      "nominal_code": "968",
+      "url": "https://api.freeagent.com/v2/categories/968"
+    },
+    {
+      "description": "Contra Account",
+      "nominal_code": "998",
+      "tax_reporting_name": "Contra",
+      "url": "https://api.freeagent.com/v2/categories/998"
+    },
+    {
+      "description": "Suspense Account",
+      "nominal_code": "999",
+      "tax_reporting_name": "Suspense",
+      "url": "https://api.freeagent.com/v2/categories/999"
+    }
+  ],
+  "income_categories": [
+    {
+      "auto_sales_tax_rate": "Standard rate",
+      "description": "Sales",
+      "group_description": "Income (normally VATable)",
+      "nominal_code": "001",
+      "url": "https://api.freeagent.com/v2/categories/001"
+    }
+  ]
+}

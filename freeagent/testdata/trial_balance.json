@@ -1,0 +1,19 @@
+{
+  "trial_balance_summary": [
+    {
+      "bank_account": "https://api.freeagent.com/v2/bank_accounts/47915",
+      "category": "https://api.freeagent.com/v2/categories/750",
+      "display_nominal_code": "750-1",
+      "name": "Example Name",
+      "nominal_code": "750-47915",
+      "total": "1000.0"
+    },
+    {
+      "category": "https://api.freeagent.com/v2/categories/999",
+      "display_nominal_code": "999",
+      "name": "Example Name",
+      "nominal_code": "999",
+      "total": "-1000.0"
+    }
+  ]
+}

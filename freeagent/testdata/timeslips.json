@@ -1,0 +1,15 @@
+{
+  "timeslips": [
+    {
+      "comment": "SDKTEST timeslip",
+      "created_at": "2026-08-16T12:42:26.000Z",
+      "dated_on": "2026-08-16",
+      "hours": "1.5",
+      "project": "https://api.freeagent.com/v2/projects/49920",
+      "task": "https://api.freeagent.com/v2/tasks/42310",
+      "updated_at": "2026-08-16T12:42:27.000Z",
+      "url": "https://api.freeagent.com/v2/timeslips/160796",
+      "user": "https://api.freeagent.com/v2/users/40180"
+    }
+  ]
+}

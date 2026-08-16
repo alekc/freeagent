@@ -1,0 +1,90 @@
+{
+  "invoices": [
+    {
+      "always_show_bic_and_iban": false,
+      "bank_account": "https://api.freeagent.com/v2/bank_accounts/47915",
+      "contact": "https://api.freeagent.com/v2/contacts/225200",
+      "contact_name": "Example Organisation Ltd",
+      "created_at": "2026-08-16T12:43:39.000Z",
+      "currency": "GBP",
+      "dated_on": "2026-08-16",
+      "due_on": "2026-09-15",
+      "due_value": "251.0",
+      "exchange_rate": "1.0",
+      "invoice_items": [
+        {
+          "category": "https://api.freeagent.com/v2/categories/001",
+          "description": "SDKTEST line",
+          "item_type": "Hours",
+          "position": 1,
+          "price": "125.5",
+          "project": "https://api.freeagent.com/v2/projects/49921",
+          "quantity": "2.0",
+          "suffers_cis_deduction": false,
+          "url": "https://api.freeagent.com/v2/invoice_items/1348965"
+        }
+      ],
+      "involves_sales_tax": false,
+      "is_interim_uk_vat": false,
+      "long_status": "Draft",
+      "net_value": "251.0",
+      "omit_header": false,
+      "paid_value": "0.0",
+      "payment_methods": {},
+      "payment_terms_in_days": 30,
+      "project": "https://api.freeagent.com/v2/projects/49921",
+      "reference": "001",
+      "send_new_invoice_emails": false,
+      "send_reminder_emails": false,
+      "send_thank_you_emails": false,
+      "show_project_name": false,
+      "status": "Draft",
+      "total_value": "251.0",
+      "updated_at": "2026-08-16T12:43:40.000Z",
+      "url": "https://api.freeagent.com/v2/invoices/756440"
+    },
+    {
+      "always_show_bic_and_iban": false,
+      "bank_account": "https://api.freeagent.com/v2/bank_accounts/47915",
+      "contact": "https://api.freeagent.com/v2/contacts/225200",
+      "contact_name": "Example Organisation Ltd",
+      "created_at": "2026-08-16T12:43:42.000Z",
+      "currency": "GBP",
+      "dated_on": "2026-08-16",
+      "due_on": "2026-09-15",
+      "due_value": "251.0",
+      "exchange_rate": "1.0",
+      "invoice_items": [
+        {
+          "category": "https://api.freeagent.com/v2/categories/001",
+          "description": "SDKTEST line",
+          "item_type": "Hours",
+          "position": 1,
+          "price": "125.5",
+          "project": "https://api.freeagent.com/v2/projects/49921",
+          "quantity": "2.0",
+          "suffers_cis_deduction": false,
+          "url": "https://api.freeagent.com/v2/invoice_items/1348966"
+        }
+      ],
+      "involves_sales_tax": false,
+      "is_interim_uk_vat": false,
+      "long_status": "Draft",
+      "net_value": "251.0",
+      "omit_header": false,
+      "paid_value": "0.0",
+      "payment_methods": {},
+      "payment_terms_in_days": 30,
+      "project": "https://api.freeagent.com/v2/projects/49921",
+      "reference": "001",
+      "send_new_invoice_emails": false,
+      "send_reminder_emails": false,
+      "send_thank_you_emails": false,
+      "show_project_name": false,
+      "status": "Draft",
+      "total_value": "251.0",
+      "updated_at": "2026-08-16T12:43:42.000Z",
+      "url": "https://api.freeagent.com/v2/invoices/756441"
+    }
+  ]
+}
