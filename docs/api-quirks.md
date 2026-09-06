@@ -52,6 +52,13 @@ root. The reports are `/v2/accounting/profit_and_loss/summary`, not the obvious 
 and income tax returns all use the period end date, so `ResourceURL.ID()` does not apply to
 them. Categories use a nominal code, and payroll uses a tax year.
 
+**An explanation's `marked_for_review` is writable, though nothing says so.** The attributes
+table describes it as the guess engine's flag and neither marks it read-only nor says it can
+be set, unlike `type` and `capital_asset`, which are marked. It can be set: sending it on a
+create or an update sticks, and the account's `marked_for_review_count` follows. No endpoint
+clears the flag, so writing `false` is the only route back. Measured on the sandbox
+2026-09-05; undocumented either way, so treat it as observed rather than promised.
+
 **Some endpoints need a filter to work at all.** Bank transactions and their explanations
 reject a list without `bank_account`. Notes need a `contact` or `project`, on create as well
 as on list. The SDK shadows the unfiltered methods so they fail locally.

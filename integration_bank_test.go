@@ -101,6 +101,7 @@ func TestLiveBankStatementAndExplanations(t *testing.T) {
 		GrossValue:      outgoing.Amount,
 		Category:        spendCategory,
 		Description:     tag + " explained",
+		MarkedForReview: new(true),
 	})
 	if err != nil {
 		t.Fatalf("BankTransactionExplanations.Create: %v", err)
@@ -113,6 +114,35 @@ func TestLiveBankStatementAndExplanations(t *testing.T) {
 		t.Fatalf("is_money_out = %v, want true for a negative amount", explanation.IsMoneyOut)
 	}
 	t.Logf("created explanation %d, type %q", explanationID, explanation.Type)
+
+	// marked_for_review is writable although nothing documents it as such, so
+	// this is what notices if that is ever withdrawn. Read back rather than
+	// trusting the write's own response, and the clear below is what rules out
+	// a flag that was going to be true whatever the create sent.
+	if explanation.MarkedForReview == nil {
+		t.Fatal("marked_for_review is absent from the created explanation")
+	}
+	if !*explanation.MarkedForReview {
+		t.Fatal("marked_for_review came back false from a create that sent true")
+	}
+	stored, _, err := client.BankTransactionExplanations.GetURL(ctx, explanation.URL)
+	if err != nil {
+		t.Fatalf("BankTransactionExplanations.GetURL: %v", err)
+	}
+	if stored.MarkedForReview == nil || !*stored.MarkedForReview {
+		t.Fatal("marked_for_review did not persist, so the create only echoed it")
+	}
+	cleared, _, err := client.BankTransactionExplanations.Update(ctx, explanationID,
+		&BankTransactionExplanation{MarkedForReview: new(false)})
+	if err != nil {
+		t.Fatalf("BankTransactionExplanations.Update: %v", err)
+	}
+	if cleared.MarkedForReview == nil {
+		t.Fatal("marked_for_review is absent after writing false")
+	}
+	if *cleared.MarkedForReview {
+		t.Fatal("marked_for_review is still set after writing false")
+	}
 
 	// The required bank_account filter again, on a different endpoint.
 	explanations, _, err := client.BankTransactionExplanations.ListForAccount(ctx, account.URL, nil)
