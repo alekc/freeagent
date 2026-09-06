@@ -8,6 +8,19 @@ All notable changes to this project are documented here. The format follows
 
 Nothing yet.
 
+## [0.1.1] - 2026-09-06
+
+### Fixed
+
+- `BankTransactionExplanation.MarkedForReview` was grouped with the read-only fields and is
+  not read-only. Measured against the sandbox, it is set on create and on update, and the
+  account's `marked_for_review_count` follows. FreeAgent's documentation marks `type` and
+  `capital_asset` read-only and says nothing either way about this one, so the wrong
+  classification was this library's own. Nothing changes on the wire: `omitempty` on a
+  `*bool` omits only a nil pointer, so a pointer to false already serialised correctly.
+  The behaviour is undocumented and could be withdrawn, which is why the live suite now
+  asserts it rather than leaving a comment to rot.
+
 ## [0.1.0] - 2026-08-16
 
 ### Added
@@ -104,5 +117,6 @@ Nothing yet.
   against a real VAT-registered company using `facli schema`, which reports field paths and
   types and never a value. No production data was captured or committed.
 
-[Unreleased]: https://github.com/alekc/freeagent/compare/v0.1.0...HEAD
+[Unreleased]: https://github.com/alekc/freeagent/compare/v0.1.1...HEAD
+[0.1.1]: https://github.com/alekc/freeagent/compare/v0.1.0...v0.1.1
 [0.1.0]: https://github.com/alekc/freeagent/releases/tag/v0.1.0
