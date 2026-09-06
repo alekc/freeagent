@@ -237,6 +237,44 @@ func TestCategoryFlattenToleratesNil(t *testing.T) {
 	}
 }
 
+// No endpoint clears marked_for_review, so writing false is the only route
+// back. omitempty drops a nil pointer and nothing else, which is what makes
+// that reachable: a plain bool would drop false too, and clearing would
+// silently stop working with every test still passing.
+func TestMarkedForReviewSerialisesFalse(t *testing.T) {
+	t.Parallel()
+
+	encoded, err := json.Marshal(BankTransactionExplanation{MarkedForReview: new(false)})
+	if err != nil {
+		t.Fatalf("Marshal = %v", err)
+	}
+	if string(encoded) != `{"marked_for_review":false}` {
+		t.Fatalf("Marshal = %s, want the false on the wire", encoded)
+	}
+
+	// Left unset it stays off the wire, so an ordinary update cannot disturb
+	// a flag the API set itself.
+	encoded, err = json.Marshal(BankTransactionExplanation{})
+	if err != nil {
+		t.Fatalf("Marshal = %v", err)
+	}
+	if string(encoded) != `{}` {
+		t.Fatalf("Marshal of an empty explanation = %s, want {}", encoded)
+	}
+
+	// The shape this guards against, pinned so the reason stays visible.
+	plain := struct {
+		M bool `json:"marked_for_review,omitempty"`
+	}{}
+	encoded, err = json.Marshal(plain)
+	if err != nil {
+		t.Fatalf("Marshal = %v", err)
+	}
+	if string(encoded) != `{}` {
+		t.Fatalf("omitempty on a false bool emitted %s; if Go has changed, this guard can go", encoded)
+	}
+}
+
 func TestBankTransactionExplanationsAllForAccount(t *testing.T) {
 	t.Parallel()
 	var seen []string

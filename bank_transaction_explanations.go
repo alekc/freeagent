@@ -70,12 +70,17 @@ type BankTransactionExplanation struct {
 
 	Attachment *Attachment `json:"attachment,omitempty"`
 
+	// Writable, though the documentation neither says so nor marks it
+	// read-only the way it marks Type and CapitalAsset. Measured on the
+	// sandbox 2026-09-05: set on create and on update, and nothing but
+	// writing false clears it. Undocumented, so it can be withdrawn.
+	MarkedForReview *bool `json:"marked_for_review,omitempty"`
+
 	// Read-only.
 	Type                      string      `json:"type,omitempty"`
 	CapitalAsset              ResourceURL `json:"capital_asset,omitempty"`
 	LinkedTransferExplanation ResourceURL `json:"linked_transfer_explanation,omitempty"`
 	LinkedTransferAccount     ResourceURL `json:"linked_transfer_account,omitempty"`
-	MarkedForReview           *bool       `json:"marked_for_review,omitempty"`
 	IsMoneyIn                 *bool       `json:"is_money_in,omitempty"`
 	IsMoneyOut                *bool       `json:"is_money_out,omitempty"`
 	IsMoneyPaidToUser         *bool       `json:"is_money_paid_to_user,omitempty"`
