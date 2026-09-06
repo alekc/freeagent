@@ -132,6 +132,10 @@ func TestLiveBankStatementAndExplanations(t *testing.T) {
 	if stored.MarkedForReview == nil || !*stored.MarkedForReview {
 		t.Fatal("marked_for_review did not persist, so the create only echoed it")
 	}
+	if got := markedCount(t, ctx, client, account.URL); got != 1 {
+		t.Fatalf("account marked_for_review_count = %d after setting the flag, want 1", got)
+	}
+
 	cleared, _, err := client.BankTransactionExplanations.Update(ctx, explanationID,
 		&BankTransactionExplanation{MarkedForReview: new(false)})
 	if err != nil {
@@ -142,6 +146,16 @@ func TestLiveBankStatementAndExplanations(t *testing.T) {
 	}
 	if *cleared.MarkedForReview {
 		t.Fatal("marked_for_review is still set after writing false")
+	}
+	reread, _, err := client.BankTransactionExplanations.GetURL(ctx, explanation.URL)
+	if err != nil {
+		t.Fatalf("BankTransactionExplanations.GetURL after the clear: %v", err)
+	}
+	if reread.MarkedForReview == nil || *reread.MarkedForReview {
+		t.Fatal("the clear did not persist, so the update only echoed it")
+	}
+	if got := markedCount(t, ctx, client, account.URL); got != 0 {
+		t.Fatalf("account marked_for_review_count = %d after clearing the flag, want 0", got)
 	}
 
 	// The required bank_account filter again, on a different endpoint.
@@ -316,6 +330,20 @@ func TestLiveSubResources(t *testing.T) {
 	} else {
 		t.Fatalf("no Car rate in the latest period: %+v", latest)
 	}
+}
+
+// markedCount reads the account-level aggregate, which is what shows the flag
+// has an effect beyond the explanation echoing the request back.
+func markedCount(t *testing.T, ctx context.Context, client *Client, account ResourceURL) int {
+	t.Helper()
+	got, _, err := client.BankAccounts.GetURL(ctx, account)
+	if err != nil {
+		t.Fatalf("BankAccounts.GetURL: %v", err)
+	}
+	if got.MarkedForReviewCount == nil {
+		t.Fatal("marked_for_review_count did not decode")
+	}
+	return *got.MarkedForReviewCount
 }
 
 // indexOfString reports the position of value in list, or -1.
